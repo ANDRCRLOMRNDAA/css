@@ -1,7 +1,6 @@
 <?php
 $domOBJ = new DOMDocument();
-$domOBJ->load("	http://feeds.bbci.co.uk/news/technology/rss.xml
-");
+$domOBJ->load("https://www.bls.gov/feed/jolts.rss");
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +9,7 @@ $domOBJ->load("	http://feeds.bbci.co.uk/news/technology/rss.xml
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
