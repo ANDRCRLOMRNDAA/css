@@ -16,7 +16,7 @@ $domOBJ->load("http://news.yahoo.com/rss/");
 <body>
     <div>
         <?php
-        $content = $domOBJ->getElementsByTagName("entry");
+        $content = $domOBJ->getElementsByTagName("item");
 
         foreach ($content as $data) {
             $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
