@@ -1,6 +1,7 @@
 <?php
 $domOBJ = new DOMDocument();
-$domOBJ->load("https://www.bls.gov/feed/jolts.rss");
+$domOBJ->load("	http://feeds.bbci.co.uk/news/technology/rss.xml
+");
 ?>
 
 <!DOCTYPE html>
