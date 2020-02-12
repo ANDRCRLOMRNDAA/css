@@ -1,6 +1,6 @@
 <?php
 $domOBJ = new DOMDocument();
-$domOBJ->load("https://www.bls.gov/feed/jolts.rss");
+$domOBJ->load("http://news.yahoo.com/rss/");
 ?>
 
 <!DOCTYPE html>
@@ -20,17 +20,18 @@ $domOBJ->load("https://www.bls.gov/feed/jolts.rss");
 
         foreach ($content as $data) {
             $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-            $content = $data->getElementsByTagName("content")->item(0)->nodeValue;
-            $category = $data->getElementsByTagName("category")->item(0)->nodeValue;
             $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
-            $published = $data->getElementsByTagName("published")->item(0)->nodeValue;
+            $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+            $copyright = $data->getElementsByTagName("copyright")->item(0)->nodeValue;
+            $pubdate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
         ?>
             <ul>
                 <li><strong><?php echo $title ?></strong></li>
                 <ul>
-                    <li><?php echo $content ?></li>
-                    <li><?php echo $category ?></li>
-                    <li><?php echo $published ?></li>
+                    <li><?php echo $link ?></li>
+                    <li><?php echo $description ?></li>
+                    <li><?php echo $copyright ?></li>
+                    <li><?php echo $pubdate ?></li>
                 </ul>
             </ul>
         <?php } ?>
