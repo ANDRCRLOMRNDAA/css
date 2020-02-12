@@ -1,6 +1,6 @@
 <?php
 $domOBJ = new DOMDocument();
-$domOBJ->load("https://www.uen.org/feeds/rss/news.xml");
+$domOBJ->load("https://www.bls.gov/feed/jolts.rss");
 ?>
 
 <!DOCTYPE html>
@@ -35,8 +35,6 @@ $domOBJ->load("https://www.uen.org/feeds/rss/news.xml");
             </ul>
         <?php } ?>
     </div>
-    <h2>Job Links</h2>
-<a href="https://www.indeed.com/" target="_blank">Visit for job opportunities</a>
 </body>
 
 
