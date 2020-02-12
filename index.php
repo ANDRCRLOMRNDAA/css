@@ -30,7 +30,7 @@ $domOBJ->load("http://news.yahoo.com/rss/");
                 <ul>
                     <li><?php echo $link ?></li>
                     <li><?php echo $description ?></li>
-                    <li><?php echo $copyright ?></li>
+                    <li><?php echo $source ?></li>
                     <li><?php echo $pubdate ?></li>
                 </ul>
             </ul>
