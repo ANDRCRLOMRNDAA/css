@@ -22,7 +22,7 @@ $domOBJ->load("http://news.yahoo.com/rss/");
             $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
             $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
             $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
-            $copyright = $data->getElementsByTagName("copyright")->item(0)->nodeValue;
+            $source = $data->getElementsByTagName("source")->item(0)->nodeValue;
             $pubdate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
         ?>
             <ul>
